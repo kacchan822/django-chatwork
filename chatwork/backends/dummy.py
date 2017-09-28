@@ -3,7 +3,7 @@ Dummy backend that does nothing.
 """
 import sys
 
-from django.utils.text import force_text
+from django.utils.encoding import force_text
 
 from .base import BaseBackend
 
