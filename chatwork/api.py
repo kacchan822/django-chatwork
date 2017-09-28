@@ -1,9 +1,4 @@
-import json
-import os
-import traceback
 import urllib.parse
-import urllib.request
-from urllib.error import HTTPError
 
 from .backends import get_backend
 

@@ -1,10 +1,3 @@
-import json
-import os
-import traceback
-import urllib.parse
-import urllib.request
-from urllib.error import HTTPError
-
 from django.utils.encoding import force_text
 from django.template.loader import render_to_string
 
