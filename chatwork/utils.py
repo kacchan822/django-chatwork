@@ -30,7 +30,6 @@ def send_chatwork(text, room, title=None, to_all=None):
 def send_chatwork_many(text, rooms, title=None, to_all=None):
     results = []
     for room in rooms:
-        result = send_chatwork(text, room, title=title, to_all=to_all,
-                               fail_silently=fail_silently)
+        result = send_chatwork(text, room, title=title, to_all=to_all)
         results.append(result)
     return results
