@@ -10,15 +10,15 @@ class ChatworkApiClient(object):
         self.backend = get_backend(backend)(api_token=api_token,
                                             endpoint=endpoint)
 
-    def get_profile(self):
+    def get_my_profile(self):
         """ 自分自身の情報を取得 """
         return self.backend.get('/me')
 
-    def get_status(self):
+    def get_my_status(self):
         """ 自分の未読数、未読To数、未完了タスク数を取得 """
         return self.backend.get('/my/status')
 
-    def get_tasks(self, **kwargs):
+    def get_my_tasks(self, **kwargs):
         """ 自分のタスク一覧を取得（最大100件）
 
             絞り込み条件

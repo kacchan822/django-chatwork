@@ -5,7 +5,7 @@ from .api import ChatworkApiClient
 
 
 client = ChatworkApiClient()
-api_account_info = client.get_profile()
+api_account_info = client.get_my_profile()
 api_account_id = getattr(api_account_info, 'account_id', '0')
 api_room_id = getattr(api_account_info, 'room_id', '0')
 
