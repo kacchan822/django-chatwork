@@ -1,0 +1,1 @@
+[info][title]{{ title }}[/title]{{ text }}[/info]
