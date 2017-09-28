@@ -1,0 +1,21 @@
+engines:
+  rubocop:
+    enabled: true
+  pep8:
+    enabled: true
+  duplication:
+    enabled: true
+    checks:
+      Similar code:
+        enabled: false
+    config:
+      languages:
+        python:
+          python_version: 3
+ratings:
+  paths:
+  - "**.py"
+exclude_paths:
+- "tests/"
+- "**/tests/"
+- "**/vendor/"
