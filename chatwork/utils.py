@@ -17,6 +17,7 @@ def get_rooms(room_type='group'):
 
 
 def send_chatwork(text, room, title=None, to_all=None):
+    """ 一つのルームにメッセージを送信する """
     context = {}
     context['members'] = [m for m in client.get_members(room)
                           if m.account_id != api_account_id]
@@ -28,6 +29,7 @@ def send_chatwork(text, room, title=None, to_all=None):
 
 
 def send_chatwork_many(text, rooms, title=None, to_all=None):
+    """ 複数のルームにメッセージを送信する """
     results = []
     for room in rooms:
         result = send_chatwork(text, room, title=title, to_all=to_all)
