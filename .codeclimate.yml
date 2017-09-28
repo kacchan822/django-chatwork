@@ -16,6 +16,5 @@ ratings:
   paths:
   - "**.py"
 exclude_paths:
-- "tests/"
-- "**/tests/"
-- "**/vendor/"
+- "tests/*"
+- "**/tests/*"
