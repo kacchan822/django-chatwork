@@ -1,0 +1,28 @@
+language: python
+
+python:
+    - "3.5"
+    - "3.6"
+
+sudo: false
+
+env:
+    - DJANGO=1.10
+    - DJANGO=1.11
+    - DJANGO=2.0
+    - DJANGO=master
+
+matrix:
+    fast_finish: true
+    allow_failures:
+      - env: DJANGO=master
+      - env: DJANGO=2.0
+
+install:
+    - pip install tox tox-travis
+
+script:
+    - tox
+
+notifications:
+    email: false
