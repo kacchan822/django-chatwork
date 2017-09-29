@@ -38,6 +38,10 @@ Quick start
 
 1. Install by pip :: 
 
+    # instal from PyPI
+    pip install django-chatwork
+
+    # install from github master branch
     pip install -U https://github.com/kacchan822/django-chatwork/archive/master.tar.gz
 
 
