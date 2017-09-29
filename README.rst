@@ -23,14 +23,14 @@ django-chatwork
    :alt: LICENSE MIT
 
 
-:django-chatwork: is Chatwork integration for Django.
+**django-chatwork** is Chatwork integration for Django.
 
 
 Requirement
 ============
 
-:Python: >=3.5
-:Django: >=1.11
+* Python >= 3.5
+* Django >= 1.11
 
 
 Quick start
