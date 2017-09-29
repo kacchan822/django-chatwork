@@ -31,7 +31,7 @@ class DjangoTest(TestCommand):
 setup(
     name='django-chatwork',
     url='https://github.com/kacchan822/django-chatwork',
-    version='0.1.1',
+    version='0.1.2',
     description='Chatwork integration for Django',
     long_description=README,
     author='Katsuya SAITO',
