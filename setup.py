@@ -29,7 +29,7 @@ class DjangoTest(TestCommand):
 
 
 setup(
-    name='django_chatwork',
+    name='django-chatwork',
     url='https://github.com/kacchan822/django-chatwork',
     version='0.1.1',
     description='Chatwork integration for Django',
