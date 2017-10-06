@@ -66,7 +66,7 @@ Quick start
     CHATWORK_API_FAIL_SILENTLY = None   # default
 
 
-4. Use age ::
+4. Usage ::
 
     from chatwork import send_message
 
