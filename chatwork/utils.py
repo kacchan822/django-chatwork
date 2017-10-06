@@ -35,3 +35,14 @@ def send_chatwork_many(text, rooms, title=None, to_all=None):
         result = send_chatwork(text, room, title=title, to_all=to_all)
         results.append(result)
     return results
+
+
+def create_task(text, room, assigned_to, limit=None, **kwargs):
+    """ タスクを依頼する """
+    data = {
+        'body': text,
+        'to_ids': ','.join(list(map(str, assigned_to))),
+    }
+    if limit is not None:
+        data['limit'] = int(limit.timestamp())
+    return client.add_tasks(room, **data)
