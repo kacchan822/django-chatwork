@@ -20,7 +20,7 @@ def send_chatwork(text, room, title=None, to_all=None):
     """ 一つのルームにメッセージを送信する """
     context = {}
     context['members'] = [m for m in client.get_members(room)
-                          if m.account_id != api_account_id]
+                          if m.get('account_id') != api_account_id]
     context['body'] = text
     context['title'] = title
     message = force_text(render_to_string('chatwork/message.txt', context))
