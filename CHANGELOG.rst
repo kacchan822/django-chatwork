@@ -39,3 +39,21 @@ Security
 ~~~~~~~~
 
 * ...
+
+
+[0.2.0] - 2017-10-06
+-------------------------
+
+Still Development State
+
+Changed
+~~~~~~~
+
+* **DummyBackend** returns example dict that values based on Chatwork API document instead of empty dict.
+* Set **CHATWORK_API_BACKEND** to class name string -- 'chatwork.backends.dummy.DummyBackend' or 'chatwork.backends.http.UrllibBackend'.
+
+
+[0.1.2] - 2017-09-27
+-------------------------
+
+Initial Release (Development State)
