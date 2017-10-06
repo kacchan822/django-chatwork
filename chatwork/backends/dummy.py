@@ -36,7 +36,7 @@ class DummyBackend(BaseBackend):
             template_name = 'chatwork/dummy{}.json'.format(endpoint)
         else:
             template_name = 'chatwork/dummy{}_{}.json'.format(endpoint,
-                                                               method.upper())
+                                                              method.upper())
         try:
             response = force_text(render_to_string(template_name, context))
         except TemplateDoesNotExist:

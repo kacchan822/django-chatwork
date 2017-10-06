@@ -39,7 +39,7 @@ class UrllibBackend(BaseBackend):
         elif not self.fail_silently:
             raise EXCEPTION_LABEL['invalid_response']
         else:
-            return {'errors': ['Invalid Response',]}
+            return {'errors': ['Invalid Response']}
 
     def __encode_data(self, data):
         return urlencode(data).encode('utf-8') if data else None
