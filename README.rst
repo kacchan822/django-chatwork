@@ -36,7 +36,7 @@ Requirement
 Quick start
 ============
 
-1. Install by pip :: 
+1. Install by pip ::
 
     # instal from PyPI
     pip install django-chatwork
@@ -45,7 +45,7 @@ Quick start
     pip install -U https://github.com/kacchan822/django-chatwork/archive/master.tar.gz
 
 
-2. Add "chatwork" to INSTALLED_APPS :: 
+2. Add "chatwork" to INSTALLED_APPS ::
 
     INSTALLED_APPS = [
         ...
@@ -54,19 +54,19 @@ Quick start
     ]
 
 
-3. Set Valuse in settings :: 
+3. Set Valuse in settings ::
 
     # You have to set this
     CHATWORK_API_TOKEN = 'youre api token'
 
     # You don't have to usually set this
     CHATWORK_API_ENDPOINT_BASE =  'https://api.chatwork.com/v2' # default
-    CHATWORK_API_BACKEND = 'http' # default if DEBUG = False
-                                  # if DEBUG = True, the value set 'dummy' as default
+    CHATWORK_API_BACKEND = 'chatwork.backends.http.UrllibBackend' # default if DEBUG = False
+                                                                  # if DEBUG = True, the value set 'chatwork.backends.dummy.DummyBackend' as default
     CHATWORK_API_FAIL_SILENTLY = None   # default
 
 
-4. Use age :: 
+4. Use age ::
 
     from chatwork import send_message
 
