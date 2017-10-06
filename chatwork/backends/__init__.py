@@ -1,15 +1,8 @@
-from django.conf import settings
+from django.utils.module_loading import import_string
 
-from .dummy import DummyBackend
-from .http import UrllibBackend
+from ..apps import ChatworkConfig
 
 
 def get_backend(backend=None):
-    backends = {
-        'dummy': DummyBackend,
-        'http': UrllibBackend,
-    }
-    default = 'dummy' if settings.DEBUG else 'http'
-    if getattr(settings, 'CHATWORK_API_BACKEND', None):
-        default = getattr(settings, 'CHATWORK_API_BACKEND', None)
-    return backends.get(backend, backends[default])
+    use_backend = backend or ChatworkConfig.BACKEND
+    return import_string(use_backend)
