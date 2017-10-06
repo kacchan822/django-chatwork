@@ -10,7 +10,7 @@ from chatwork.backends.http import UrllibBackend
 class DummyBackendTests(TestCase):
     def test_return_empty(self):
         backend = DummyBackend()
-        self.assertEqual(backend.get('/me'), {})
+        self.assertEqual(backend.get('/'), {})
 
 class GetBackendTests(TestCase):
     def test_default_backend(self):
