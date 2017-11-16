@@ -1,1 +1,1 @@
-[info][title]{{ title }}[/title]{{ text }}[/info]
+[info][title]{{ title }}[/title]{{ body }}[/info]
