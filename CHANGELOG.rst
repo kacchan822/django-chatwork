@@ -41,6 +41,23 @@ Security
 * ...
 
 
+[0.3.0] - 2017-11-17
+-------------------------
+
+Still Development State
+
+Added
+~~~~~~~
+
+* function **create_task**
+
+Fixed
+~~~~~~~
+
+* Cannot mentione to all member in room even if to_all = True.
+* Lost message text sending info style message.
+
+
 [0.2.0] - 2017-10-06
 -------------------------
 
