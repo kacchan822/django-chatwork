@@ -97,10 +97,31 @@ class ChatworkApiClient(object):
         uri = '/rooms/{0}/messages'.format(room_id)
         return self.backend.post(uri, data=data)
 
+    def read_messages(self, room_id, message_id):
+        """ メッセージを既読にする """
+        uri = '/rooms/{0}/messages/read'.format(room_id)
+        return self.backend.put(uri, data={'message_id': message_id})
+
+    def unread_messages(self, room_id, message_id):
+        """ メッセージを未読にする """
+        uri = '/rooms/{0}/messages/unread'.format(room_id)
+        return self.backend.put(uri, data={'message_id': message_id})
+
     def get_message(self, room_id, message_id):
         """ メッセージ情報を取得 """
         uri = '/rooms/{0}/messages/{1}'.format(room_id, message_id)
         return self.backend.get(uri)
+
+    def update_message(self, room_id, message_id, message):
+        """ メッセージを更新 """
+        data = {'body': message}
+        uri = '/rooms/{0}/messages/{1}'.format(room_id, message_id)
+        return self.backend.put(uri, data=data)
+
+    def delete_message(self, room_id, message_id):
+        """ メッセージを削除 """
+        uri = '/rooms/{0}/messages/{1}'.format(room_id, message_id)
+        return self.backend.delete(uri)
 
     def get_tasks(self, room_id):
         """ チャットのタスク一覧を取得（100件まで）"""
