@@ -41,6 +41,20 @@ Security
 * ...
 
 
+[0.4.0] - 2018-06-06
+-------------------------
+
+Added
+~~~~~
+
+* API methods:update, delete, read and unread message
+
+Changed
+~~~~~~~
+
+* Message notation for all members in room
+
+
 [0.3.0] - 2017-11-17
 -------------------------
 
