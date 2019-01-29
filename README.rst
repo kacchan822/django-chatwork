@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkacchan822%2Fdjango-chatwork.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkacchan822%2Fdjango-chatwork?ref=badge_shield)
+
 ===============
 django-chatwork
 ===============
@@ -87,3 +89,6 @@ Quick start
 
 Acknowledgements
 =================
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkacchan822%2Fdjango-chatwork.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkacchan822%2Fdjango-chatwork?ref=badge_large)
