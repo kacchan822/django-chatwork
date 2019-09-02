@@ -36,6 +36,11 @@ def send_chatwork_many(text, rooms, title=None, to_all=None):
     return results
 
 
+def delete_message(room_id, message_id):
+    """ 指定したメッセージを削除する """
+    return client.delete_message(room_id, message_id)
+
+
 def create_task(text, room, assigned_to, limit=None, **kwargs):
     """ タスクを依頼する """
     data = {
