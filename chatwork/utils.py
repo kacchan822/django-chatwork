@@ -1,4 +1,3 @@
-from django.utils.encoding import force_text
 from django.template.loader import render_to_string
 
 from .api import ChatworkApiClient
@@ -23,7 +22,7 @@ def send_chatwork(text, room, title=None, to_all=None):
         'title': title,
         'to_all': to_all,
     }
-    message = force_text(render_to_string('chatwork/message.txt', context))
+    message = render_to_string('chatwork/message.txt', context)
     return client.add_messages(room, message.strip())
 
 

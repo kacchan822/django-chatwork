@@ -4,7 +4,6 @@ Dummy backend that does nothing.
 import json
 import re
 
-from django.utils.encoding import force_text
 from django.template.exceptions import TemplateDoesNotExist
 from django.template.loader import render_to_string
 
@@ -38,7 +37,7 @@ class DummyBackend(BaseBackend):
             template_name = 'chatwork/dummy{}_{}.json'.format(endpoint,
                                                               method.upper())
         try:
-            response = force_text(render_to_string(template_name, context))
+            response = render_to_string(template_name, context)
         except TemplateDoesNotExist:
             response = '{}'
 
