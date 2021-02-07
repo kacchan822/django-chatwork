@@ -41,6 +41,20 @@ Security
 * ...
 
 
+[0.6.0] - 2021-02-07
+-------------------------
+
+Changed
+~~~~~
+
+* Support Django 2.2, 3.0, 3.1 and droped support Django 1.10
+
+Fixed
+~~~~~
+
+* RemovedInDjango40Warning: force_text() is deprecated in favor of force_str().
+
+
 [0.5.0] - 2019-09-02
 -------------------------
 
